@@ -2,4 +2,4 @@
 applications:
 - name: DevOps
   memory: 512M
-  path: META-INF/MANIFEST.MF
+  path: target/my-app-1.0-SNAPSHOT.jar
