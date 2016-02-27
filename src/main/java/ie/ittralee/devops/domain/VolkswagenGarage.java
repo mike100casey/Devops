@@ -6,6 +6,9 @@ package ie.ittralee.devops.domain;
  */
 public class VolkswagenGarage implements EngineManufacturer {
 
+    public VolkswagenGarage() {
+    }
+
     @Override
     public Engine buildEngine(EngineType engineType) {
         return new VW_Engine(engineType);

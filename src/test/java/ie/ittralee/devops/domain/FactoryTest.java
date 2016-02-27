@@ -2,7 +2,9 @@ package ie.ittralee.devops.domain;
 
 import org.junit.Test;
 
+import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 /**
  *
@@ -63,6 +65,12 @@ public class FactoryTest {
         EngineManufacturer manufacturer = new MclarenGarage();
         Engine engine = manufacturer.buildEngine(EngineType.BIKE_ENGINE);
         assertEquals(EngineType.BIKE_ENGINE, engine.getEngineType());
+    }
+
+    @Test
+    public void enumTitle() {
+        assertThat(EngineType.RACING_ENGINE.getTitle(),is("turbo charged"));
+        assertThat(EngineType.STOCK_ENGINE.getTitle(),is("standard 1.4l"));
     }
 
 }

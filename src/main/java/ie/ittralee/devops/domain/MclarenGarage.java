@@ -6,6 +6,9 @@ package ie.ittralee.devops.domain;
  */
 public class MclarenGarage implements EngineManufacturer {
 
+    public MclarenGarage() {
+    }
+
     @Override
     public Engine buildEngine(EngineType engineType) {
         return new MclarenEngine(engineType);
