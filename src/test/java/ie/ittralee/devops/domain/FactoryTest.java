@@ -67,6 +67,10 @@ public class FactoryTest {
         assertEquals(EngineType.BIKE_ENGINE, engine.getEngineType());
     }
 
+    /**
+     * Testing {@link EngineType} an Engine type has a correct title
+     *
+     */
     @Test
     public void enumTitle() {
         assertThat(EngineType.RACING_ENGINE.getTitle(),is("turbo charged"));
