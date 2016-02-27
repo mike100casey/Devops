@@ -1,11 +1,11 @@
-package ie.ittralee.devops.domain;
+package main.java.ie.ittralee.devops.domain;
 
 /***
  * Created by Michael on 02/26/2016..
  */
 public enum EngineType {
 
-    STOCK_ENGINE("standard 1.4l"), RACING_ENGINE("turbo charged"), BIKE_ENGINE("bike");
+    STOCK_ENGINE("standard 1.4l"), BIKE_ENGINE("bike"), RACING_ENGINE("turbo charged");
 
     private final String title;
 
@@ -13,7 +13,7 @@ public enum EngineType {
         this.title = title;
     }
 
-    String getTitle(){
+    public String getTitle(){
         return title;
     }
 

@@ -1,7 +1,9 @@
-package ie.ittralee.devops.domain;
+package test.java.ie.ittralee.devops.domain;
 
+import main.java.ie.ittralee.devops.domain.*;
 import org.junit.Test;
 
+import main.java.ie.ittralee.devops.domain.EngineType.*;
 import static org.hamcrest.core.Is.is;
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertThat;
@@ -73,8 +75,8 @@ public class FactoryTest {
      */
     @Test
     public void enumTitle() {
-        assertThat(EngineType.RACING_ENGINE.getTitle(),is("turbo charged"));
-        assertThat(EngineType.STOCK_ENGINE.getTitle(),is("standard 1.4l"));
+       assertThat(EngineType.RACING_ENGINE.getTitle(),is("turbo charged"));
+       assertThat(EngineType.STOCK_ENGINE.getTitle(),is("standard 1.4l"));
     }
 
 }

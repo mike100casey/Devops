@@ -1,4 +1,4 @@
-package ie.ittralee.devops.domain;
+package main.java.ie.ittralee.devops.domain;
 
 /**
  *
@@ -6,5 +6,5 @@ package ie.ittralee.devops.domain;
  */
 public interface Engine {
 
-    EngineType getEngineType();
+   EngineType getEngineType();
 }

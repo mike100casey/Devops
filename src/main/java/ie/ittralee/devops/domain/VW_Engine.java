@@ -1,4 +1,4 @@
-package ie.ittralee.devops.domain;
+package main.java.ie.ittralee.devops.domain;
 
 /**
  *

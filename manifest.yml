@@ -2,4 +2,4 @@
 applications:
 - name: DevOps
   memory: 512M
-  path: target/DevOps-1.0.war
+  path: META-INF/MANIFEST.MF
