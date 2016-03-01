@@ -37,7 +37,7 @@ public class CustomerTest {
         replay(mockloan);
        
         double expResult = 106.23;
-        
+
         instance.takeoutloan();
         double result = instance.getMonthlypayments();
         assertEquals("The monthly payments must be equal", expResult, result, 0.5) ; 
