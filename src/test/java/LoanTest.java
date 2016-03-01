@@ -18,30 +18,17 @@ public class LoanTest {
     public LoanTest() {
     }
     
-    @BeforeClass
-    public static void setUpClass() {
-        //only called once
-        System.out.println("Before class");
-        
-    }
-    
-    @AfterClass
-    public static void tearDownClass() {
-        //only called once
-        System.out.println("After class");
-    }
+
     
     @Before
     public void setUp() {
         //called every time
-        System.out.println("Before");
         instance = new Loan(5000.0,10,5);
     }
     
     @After
     public void tearDown() { 
         //called every time
-        System.out.println("After");
     }
 
     /**
@@ -49,7 +36,6 @@ public class LoanTest {
      */
     @Test
     public void testGetAmount() {
-        System.out.println("getAmount");
         double expResult = 5000.0;
         double result = instance.getAmount();
         assertEquals(expResult, result, 0.0);
@@ -61,7 +47,6 @@ public class LoanTest {
      */
     @Test
     public void testGetPeriod() {
-        System.out.println("getPeriod");
         int expResult = 5;
         int result = instance.getPeriod();
         assertEquals(expResult, result);
@@ -73,7 +58,6 @@ public class LoanTest {
      */
     @Test
     public void testGetRate() {
-        System.out.println("getRate");
         double expResult = 10.0;
         double result = instance.getRate();
         assertEquals(expResult, result, 0.0);
@@ -85,7 +69,6 @@ public class LoanTest {
      */
     @Test
     public void testGetMonthlyPayment() {
-        System.out.println("getMonthlyPayment");
         double expResult = 106.23;
         double result = instance.getMonthlyPayment();
         assertEquals(expResult, result, 0.01);
@@ -97,7 +80,6 @@ public class LoanTest {
      */
     @Test
     public void testGetTotalPayment() {
-        System.out.println("getTotalPayment");
         double expResult = 6374.11;
         double result = instance.getTotalPayment();
         assertEquals(expResult, result, 0.01);

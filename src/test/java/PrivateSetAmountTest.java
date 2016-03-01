@@ -22,7 +22,6 @@ public class PrivateSetAmountTest {
      */
     @Test
     public void testSetAmount1() throws Exception {
-        System.out.println("setAmount1");
         Loan target = new Loan(4000.0, 10.0, 5);
         Class secretClass = target.getClass();
 
@@ -31,7 +30,6 @@ public class PrivateSetAmountTest {
         /* make sure the field is accessible. */
         f.setAccessible(true);
         /* get the value of the field */
-        System.out.println("The value in f is " + f.get(target));
         double result = f.getDouble(target);
         assertEquals("The amounts should be equal", 4000.00, result, 0.0);
     }
@@ -41,8 +39,6 @@ public class PrivateSetAmountTest {
      */
     @Test
     public void testSetAmount2() throws Exception {
-        System.out.println("setAmount2");
-        /* Set up a new loan */
         Loan target = new Loan();
 
         /* get the setAmount method details */
@@ -67,7 +63,6 @@ public class PrivateSetAmountTest {
      */
     @Test
     public void testSetRate() throws Exception {
-        System.out.println("setRate");
 
         /* Set up a new loan */
         Loan target = new Loan();

@@ -44,7 +44,6 @@ public class ParameterizedGetTotalPaymentTest {
 
     @Test
     public void TestTotalPayment_Calc() {
-        System.out.println("Test TotalPayment" + amount);
         Loan calc = new Loan(amount, rate, period);
         assertEquals(expected, calc.getTotalPayment(), 0.5);
     }

@@ -23,7 +23,6 @@ public class PrivateSetPeriodTest {
      */
     @Test
     public void testSetPeriod() throws Exception {
-        System.out.println("setPeriod");
 
         /* Set up a new loan */
         Loan target = new Loan();

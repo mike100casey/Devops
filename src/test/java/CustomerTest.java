@@ -25,7 +25,6 @@ public class CustomerTest {
      */
     @Test
     public void testTakeoutloan() {
-        System.out.println("takeoutloan");
         Customer instance = new Customer("Jake Black",0.0);
        
          /*call the createMock to create a mock for the Loan class */
@@ -38,7 +37,6 @@ public class CustomerTest {
         replay(mockloan);
        
         double expResult = 106.23;
-       System.out.println("takeoutloan");
         
         instance.takeoutloan();
         double result = instance.getMonthlypayments();

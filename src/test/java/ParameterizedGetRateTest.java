@@ -42,7 +42,6 @@ public class ParameterizedGetRateTest {
     
      @Test
     public void TestGetRate_Calc() {
-        System.out.println("Test Getrate" + amount);
         Loan calc = new Loan(amount, rate, period);
         assertEquals(expected, calc.getRate(), 0.5);
     }
