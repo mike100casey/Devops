@@ -1,4 +1,3 @@
-import main.java.ie.ittralee.devops.domain.Tester;
 import org.junit.Test;
 
 import java.io.IOException;
