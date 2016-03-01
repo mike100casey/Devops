@@ -10,14 +10,14 @@
  
 */
 
-class Loan {
+public class Loan {
 
 //----------------------------------
 //    Data Members
 //----------------------------------
 
     // Constant for the number of months in a year
-    private final int MONTHS_IN_YEAR = 12;
+     final int MONTHS_IN_YEAR = 12;
 
     // The amount of the loan
     private double    loanAmount;

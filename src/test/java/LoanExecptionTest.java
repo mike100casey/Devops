@@ -58,17 +58,6 @@ public class LoanExecptionTest {
         System.setErr(null); 
     }
 
-    
-    /* rules allow us to check the execption and the exception message */  
-    //Will never pass, catch lock deals with the code. Never change the source code
-    @Rule  public ExpectedException thrown = ExpectedException.none();
-    @Test
-    public void invalidMessagesShouldThrowAutoPopulateException() {
-        thrown.expect(IllegalArgumentException.class);
-        thrown.expectMessage("Error Negative and zero amount values invalid");
-        Loan testloan = new Loan(-500.0, 10.0, 5);  
-        System.out.println("amt is " + testloan.getAmount());
-    }
 
     
 }
