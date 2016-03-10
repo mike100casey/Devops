@@ -1,0 +1,6 @@
+---
+applications:
+- name: Devops
+memory: 512M
+host: Devops
+path: target/factory-1.0-SNAPSHOT.jar
