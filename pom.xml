@@ -26,16 +26,27 @@
                 <version>0.6.4.201312101107</version>
                 <executions>
                     <execution>
-                        <id>pre-unit-test</id>
+                        <id>prepare-unit-test-agent</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
                     <execution>
-                        <id>post-unit-test</id>
-                        <phase>test</phase>
+                        <id>generate-unit-test-report</id>
                         <goals>
                             <goal>report</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>prepare-integration-test-agent</id>
+                        <goals>
+                            <goal>prepare-agent-integration</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>generate-integration-test-report</id>
+                        <goals>
+                            <goal>report-integration</goal>
                         </goals>
                     </execution>
                 </executions>
