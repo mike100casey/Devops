@@ -32,11 +32,11 @@ public class LoanTest {
     }
 
     /**
-     * Test of getAmount method, of class Loan.
+     * Test of getAmount method, of class Loan. 5000
      */
     @Test
     public void testGetAmount() {
-        double expResult = 5000.0;
+        double expResult = 6000.0;
         double result = instance.getAmount();
         assertEquals(expResult, result, 0.0);
         
