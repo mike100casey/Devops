@@ -1,4 +1,4 @@
-<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<?xml version="1.0" encoding="UTF-8"?>
 <!--<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"-->
          <!--xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"-->
          <!--xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"-->
@@ -7,5 +7,16 @@
 <!--</web-app>-->
 <!--<Context path="/" reloadable="true" source="my-devops-jenkins.cfapps.io"/>-->
 <web-app>
-    <context-root>/my-devops-jenkins.cfapps.io</context-root>
+    <configuration>
+        <descriptors>
+            <deploymentDescriptor name="web.xml" url="file://Devops/web/WEB-INF/web.xml" />
+        </descriptors>
+        <webroots>
+            <root url="file://Devops/src/main/webapp" relative="/" />
+        </webroots>
+        <sourceRoots>
+            <root url="file://Devops/src/main/java" />
+            <root url="file://Devops/src/main/resources" />
+        </sourceRoots>
+    </configuration>
 </web-app>
