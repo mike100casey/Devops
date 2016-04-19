@@ -7,5 +7,5 @@
 <!--</web-app>-->
 <!--<Context path="/" reloadable="true" source="my-devops-jenkins.cfapps.io"/>-->
 <web-app>
-    <context-root>/Devops</context-root>
+    <context-root>/my-devops-jenkins.cfapps.io</context-root>
 </web-app>
