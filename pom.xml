@@ -62,8 +62,10 @@
                         <format>xml</format>
                         <format>html</format>
                     </formats>
+                    <check/>
                 </configuration>
             </plugin>
+
         </plugins>
     </build>
     <reporting>

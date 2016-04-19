@@ -36,7 +36,7 @@ public class LoanTest {
      */
     @Test
     public void testGetAmount() {
-        double expResult = 6000.0;
+        double expResult = 5000.0;
         double result = instance.getAmount();
         assertEquals(expResult, result, 0.0);
         
