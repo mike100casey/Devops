@@ -5,4 +5,4 @@
          <!--version="3.1">-->
 
 <!--</web-app>-->
-<Context path="web/" reloadable="true" source="my-devops-jenkins.cfapps.io"/>
+<Context path="/" reloadable="true" source="my-devops-jenkins.cfapps.io"/>
