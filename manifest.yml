@@ -3,4 +3,4 @@ applications:
 - name: My-Devops-Jenkins
   memory: 512M
   host: my-devops-jenkins
-  path: target/factory-1.0-SNAPSHOT.jar
+  path: target/factory-1.0-SNAPSHOT.war
