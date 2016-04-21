@@ -29,7 +29,7 @@
                     <execution>
                         <phase>package</phase>
                         <configuration>
-                            <webXml>..../WEB-INF/web.xml</webXml>
+                            <webXml>web/WEB-INF/web.xml</webXml>
                         </configuration>
                     </execution>
                 </executions>
