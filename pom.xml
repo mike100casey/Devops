@@ -10,6 +10,10 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
+    <properties>
+        <jetty.http.port>9999</jetty.http.port>
+    </properties>
+
     <build>
         <plugins>
             <plugin>
@@ -38,17 +42,12 @@
             <plugin>
                 <groupId>org.eclipse.jetty</groupId>
                 <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.3.7.v20160115</version>
+                <version>9.2.1.v20140609</version>
                 <configuration>
-                    <scanIntervalSeconds>10</scanIntervalSeconds>
-                    <connectors>
-                        <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
-                            <port>9999</port>
-                            <maxIdleTime>60000</maxIdleTime>
-                        </connector>
-                    </connectors>
-                    <stopKey>foo</stopKey>
-                    <stopPort>8080</stopPort>
+                    <httpConnector>
+                        <!--host>localhost</host-->
+                        <port>9999</port>
+                    </httpConnector>
                 </configuration>
             </plugin>
 
