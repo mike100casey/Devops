@@ -35,11 +35,22 @@
                 </executions>
             </plugin>
 
-            <!--<plugin>-->
-                <!--<groupId>org.apache.maven.plugins</groupId>-->
-                <!--<artifactId>maven-war-plugin</artifactId>-->
-                <!--<version>2.4</version>-->
-            <!--</plugin>-->
+            <plugin>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>9.3.7.v20160115</version>
+                <configuration>
+                    <scanIntervalSeconds>10</scanIntervalSeconds>
+                    <connectors>
+                        <connector implementation="org.eclipse.jetty.server.nio.SelectChannelConnector">
+                            <port>9999</port>
+                            <maxIdleTime>60000</maxIdleTime>
+                        </connector>
+                    </connectors>
+                    <stopKey>foo</stopKey>
+                    <stopPort>8080</stopPort>
+                </configuration>
+            </plugin>
 
             <plugin>
                 <groupId>org.jacoco</groupId>
@@ -112,6 +123,7 @@
 
         </plugins>
     </build>
+
     <reporting>
         <plugins>
             <plugin>
