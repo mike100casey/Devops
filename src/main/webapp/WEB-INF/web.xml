@@ -8,12 +8,12 @@
     <display-name>Game of Life Web Application</display-name>
 
     <servlet>
-        <servlet-name>gameoflife</servlet-name>
+        <servlet-name>CA</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
     <servlet-mapping>
-        <servlet-name>gameoflife</servlet-name>
+        <servlet-name>CA</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
