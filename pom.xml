@@ -97,7 +97,7 @@
                         </goals>
                         <configuration>
                             <dataFile>target/reports/jacoco-ut.exec</dataFile>
-                            <outputDirectory>target/reports//jacoco-ut</outputDirectory>
+                            <outputDirectory>target/reports/jacoco-ut</outputDirectory>
                         </configuration>
                     </execution>
 
