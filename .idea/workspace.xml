@@ -70,8 +70,8 @@
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6689815">
-              <caret line="99" column="60" selection-start-line="99" selection-start-column="60" selection-end-line="99" selection-end-column="60" />
+            <state vertical-scroll-proportion="0.27546296">
+              <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -782,7 +782,7 @@
       <workItem from="1461077232415" duration="7743000" />
       <workItem from="1461249410798" duration="7351000" />
       <workItem from="1461276986392" duration="813000" />
-      <workItem from="1461679050085" duration="1794000" />
+      <workItem from="1461679050085" duration="2009000" />
     </task>
     <task id="LOCAL-00001" summary="Added files">
       <created>1456849011226</created>
@@ -1000,11 +1000,17 @@
       <option name="project" value="LOCAL" />
       <updated>1461680527449</updated>
     </task>
-    <option name="localTasksCounter" value="37" />
+    <task id="LOCAL-00037" summary="jacoco fix">
+      <created>1461680960851</created>
+      <option name="number" value="00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1461680960851</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43655000" />
+    <option name="totallyTimeSpent" value="43870000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1047" extended-state="6" />
@@ -1061,7 +1067,8 @@
     <MESSAGE value="added root context" />
     <MESSAGE value="changed port number" />
     <MESSAGE value="added servlet" />
-    <option name="LAST_COMMIT_MESSAGE" value="added servlet" />
+    <MESSAGE value="jacoco fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="jacoco fix" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1443,8 +1450,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6689815">
-          <caret line="99" column="60" selection-start-line="99" selection-start-column="60" selection-end-line="99" selection-end-column="60" />
+        <state vertical-scroll-proportion="0.27546296">
+          <caret line="97" column="45" selection-start-line="97" selection-start-column="45" selection-end-line="97" selection-end-column="45" />
           <folding />
         </state>
       </provider>
