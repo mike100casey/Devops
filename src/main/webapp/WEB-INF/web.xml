@@ -5,7 +5,7 @@
          version="2.5"
          xmlns="http://java.sun.com/xml/ns/javaee">
 
-    <display-name>Game of Life Web Application</display-name>
+    <display-name>CA Web Application</display-name>
 
     <servlet>
         <servlet-name>CA</servlet-name>

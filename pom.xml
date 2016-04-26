@@ -15,7 +15,7 @@
     <!--</properties>-->
 
     <properties>
-        <maven.tomcat.port>9991</maven.tomcat.port>
+        <maven.tomcat.port>9966</maven.tomcat.port>
     </properties>
 
     <build>
@@ -49,12 +49,12 @@
                 <artifactId>tomcat-maven-plugin</artifactId>
                 <version>1.0</version>
                 <configuration>
-                    <!--<server>tomcat-development-server</server>-->
-                    <!--<port>9966</port>-->
-                    <httpConnector>
-                        <!--host>localhost</host-->
-                        <port>9991</port>
-                    </httpConnector>
+                    <server>tomcat-development-server</server>
+                    <port>9966</port>
+                    <!--<httpConnector>-->
+                        <!--&lt;!&ndash;host>localhost</host&ndash;&gt;-->
+                        <!--<port>9991</port>-->
+                    <!--</httpConnector>-->
                 </configuration>
             </plugin>
 
@@ -81,12 +81,26 @@
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
+
                     <execution>
                         <id>generate-unit-test-report</id>
                         <goals>
                             <goal>report</goal>
                         </goals>
                     </execution>
+
+                    <execution>
+                        <id>post-unit-test</id>
+                        <phase>test</phase>
+                        <goals>
+                            <goal>report</goal>
+                        </goals>
+                        <configuration>
+                            <dataFile>target/reports/jacoco-ut.exec</dataFile>
+                            <outputDirectory>target/reports//jacoco-ut</outputDirectory>
+                        </configuration>
+                    </execution>
+
                     <execution>
                         <id>prepare-integration-test-agent</id>
                         <goals>
